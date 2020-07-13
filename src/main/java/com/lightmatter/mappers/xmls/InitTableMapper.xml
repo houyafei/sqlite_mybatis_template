@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+ <!--- 命名空间 namespace -->
+<mapper namespace="com.lightmatter.mappers.mapper.InitTableMapper">
+
+    <update id="createUserTable"  >
+        CREATE TABLE IF NOT EXISTS userss
+        (
+            id INTEGER  not null primary key AUTOINCREMENT,
+            username varchar(40),
+            password varchar(40)
+        );
+
+
+    </update>
+
+</mapper>

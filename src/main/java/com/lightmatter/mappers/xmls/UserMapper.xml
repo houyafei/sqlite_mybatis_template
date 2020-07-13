@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 这边的namespace一定要写完整正确 -->
+<mapper namespace="com.lightmatter.mappers.mapper.UserMapper">
+    <!-- 通过id查询用户 -->
+    <select id="getUserById" parameterType="int" resultType="com.lightmatter.dto.User">
+        select * from user where id = #{id}
+    </select>
+
+<!--    &lt;!&ndash;插入用户信息&ndash;&gt;-->
+<!--    <insert id="insertUser" parameterType="com.mvc.User">-->
+<!--        insert into user(id,username,password) values(#{id},#{username},#{password})-->
+<!--    </insert>-->
+
+
+</mapper>
