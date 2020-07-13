@@ -2,7 +2,7 @@ package com.lightmatter.mapperservice;
 
 import com.lightmatter.mappers.mapper.InitTableMapper;
 import com.lightmatter.util.MybatisUtil;
-import com.lightmatter.util.SqlUtil;
+
 import org.apache.ibatis.session.SqlSession;
 
 public class InitTableService {

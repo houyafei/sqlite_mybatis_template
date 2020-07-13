@@ -20,11 +20,9 @@
 
     <mappers>
         <!--将操作配置文件User.xml系添加进mapper-->
-<!--        <mapper class="com.lightmatter.mappers.mapper.UserMapper"/>-->
         <mapper resource="com/lightmatter/mappers/xmls/UserMapper.xml"/>
         <mapper resource="com/lightmatter/mappers/xmls/InitTableMapper.xml"/>
         <package name="com/lightmatter/mappers/xmls/**.xml"/>
-<!--        <package name="com/lightmatter/mappers/"/>-->
     </mappers>
 
 
